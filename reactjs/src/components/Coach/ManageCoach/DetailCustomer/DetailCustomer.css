@@ -1,0 +1,53 @@
+#DetailCustomer .border-detail{
+    border:1px solid black
+}
+#DetailCustomer .btn-cancel{
+    border:1px solid #F53855;
+    color:#F53855;
+}
+#DetailCustomer .btn-schedule{
+    background-color: #F53855;
+    color:white;
+}
+#DetailCustomer .btn-cancel{
+    margin-right:30px;
+}
+#DetailCustomer .btn-schedule,
+#DetailCustomer .btn-cancel{
+    width:130px;
+}
+#DetailCustomer .btn-cancel:hover{
+    background-color: #F53855;
+    color:white;
+}
+#DetailCustomer .btn-schedule:hover{
+    border:1px solid #F53855;
+    color:#F53855;
+    background-color: transparent;
+}
+#DetailCustomer .border-detail span{
+    display: inline-block;
+    width: 110px; /* Đặt chiều rộng mong muốn của span */
+} 
+#DetailCustomer .border-detail .col-sm-6{
+    padding-left:17%;
+}
+#DetailCustomer img{
+    width:50px; 
+    height:50px;
+}
+#DetailCustomer .bodyfat{
+    font-size: 17px;
+    font-weight: 500;
+    margin-left:10px;
+}
+#DetailCustomer .btn-history{
+    border:1px solid #F53855;
+    color:#F53855;
+    margin-left:30px;
+    width:130px;
+}
+#DetailCustomer .btn-history:hover{
+    background-color: #F53855;
+    color:white;
+}

@@ -1,0 +1,138 @@
+#addmealofcoach .search-border {
+    border: 1px solid #0000001A;
+    padding: 10px;
+    width: 400px;
+    height: 40px;
+}
+
+#addmealofcoach .search-border i {
+    margin-left: 10px;
+}
+
+#addmealofcoach .search-border input {
+    border: none;
+    outline: 0;
+    margin-left: 20px;
+}
+#addmealofcoach .btn-search{
+    font-size:10px;
+    margin-left:10px;
+    height:40px;
+    width:70px;
+    color:white;
+    background-color:#F53838
+}
+#addmealofcoach .btn-search:hover{
+    background-color: transparent;
+    border:1px solid #F53838;
+    color:#F53838
+}
+
+#addmealofcoach .btn-add{
+    border: 1px solid #000;
+    background-color: transparent;
+    color:#F53838;
+    width:80px;
+}
+#addmealofcoach button:hover{
+    border: 1px solid #F53838;
+    background-color: transparent;
+    color: #F53838;
+}
+#addmealofcoach select{
+    padding-top:5px;
+    padding-bottom: 5px;
+    padding-right:7px;
+    padding-left:7px;
+    margin-top:3px;
+}
+#addmealofcoach .table input{
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-right: 5px;
+    padding-left: 5px;
+    margin-top:3px;
+}
+#addmealofcoach .pagination {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#addmealofcoach .pagination button {
+    font-size: 14px;
+    padding: 8px 12px;
+    margin-right: 8px;
+    border: 1px solid #000;
+    background-color: transparent;
+    color: #000;
+    cursor: pointer;
+}
+
+#addmealofcoach .pagination button:hover {
+    background-color: #F53838;
+    color: #fff;
+}
+
+#addmealofcoach .pagination .btn-next,
+#addmealofcoach .pagination .btn-prev {
+    width:55px;
+}
+
+#addmealofcoach .pagination .disabled {
+    border: 1px solid #ccc;
+    color: #ccc;
+    cursor: not-allowed;
+}
+
+#addmealofcoach .pagination .btn-active {
+    background-color: #F53838;
+    color: #fff;
+    border: 1px solid #F53838;
+}
+
+#addmealofcoach .pagination span {
+    margin-right: 20px;
+}
+
+#addmealofcoach .btn-next {
+    margin-right: 0;
+}
+
+#addmealofcoach .btn-prev:last-child {
+    margin-right: 20px;
+}
+
+#addmealofcoach .btn-next {
+    margin-right: 0;
+}
+
+#addmealofcoach .btn-prev:last-child {
+    margin-right: 20px;
+}
+
+#addmealofcoach .pagination .btn-prev {
+    order: 2;
+}
+
+#addmealofcoach .pagination .btn-next {
+    order: 3;
+}
+
+#addmealofcoach .pagination button:not(.disabled) ~ button:last-child {
+    display: inline-block;
+}
+
+#addmealofcoach .pagination .btn-prev,
+#addmealofcoach .pagination .btn-active,
+#addmealofcoach .pagination .btn-next {
+    display: inline-block; /* Hiển thị chỉ các nút prev, active và next */
+}
+
+#addmealofcoach .pagination .btn-prev + button,
+#addmealofcoach .pagination .btn-active + button {
+    display: inline-block; /* Hiển thị nút trang tiếp theo sau nút prev hoặc active */
+}
+#addmealofcoach .table_user{
+    height:395px;
+}

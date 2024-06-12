@@ -1,0 +1,114 @@
+#login .login_image img{
+    width:550px;
+    height:450px;
+}
+#login .login_logo img{
+    width: 50px;
+    height:50px;
+}
+#login .login_logo img{
+    margin-right:20px;
+}
+#login span{
+    font-weight: 600;
+    font-size: 40px;
+    margin-left:30px;
+}
+#login .login_title{
+    font-weight: 700;
+    font-size:40px;
+}
+#login i{
+    color:white;
+    background-color: red;
+    padding-top:11px;
+    padding-bottom: 11px;
+    padding-left:12px;
+    padding-right: 12px;
+    border-radius: 8px;
+    font-size:18px;
+}
+#login input{
+    padding: 10px;
+    border-radius: 10px;
+    border:none;
+    outline:0;
+    width:315px;
+    background-color: #F1F3F6;
+}
+#login .login_btn_login button:hover{
+    border: 1px solid #F53855;
+    color:red;
+    background-color: transparent;
+}
+#login .login_form{
+    margin-left:20px;
+    margin-top:30px;
+}
+#login .login_forgot_password{
+    margin-right:11%;
+    margin-top:5px;
+    margin-bottom: 20px;
+}
+#login .login_forgot_password a:hover{
+    opacity: 0.8;
+}
+#login .login_btn_login button{
+    color:white;
+    background-color: #F53855;
+    width:90%;
+    box-shadow:0px 5px 10px #FD74014D;
+}
+#login .login_border_left{
+    width: 36%; /* Điều chỉnh chiều dài theo nhu cầu */
+    height: 2px; /* Điều chỉnh độ dày theo nhu cầu */
+    background-color: #C2C2C2; /* Màu sắc của đường ngang */
+    margin-top:12px;
+    margin-right:24px;
+    margin-left:2px;
+}
+#login .login_border_right{
+    width: 36%; /* Điều chỉnh chiều dài theo nhu cầu */
+    height: 2px; /* Điều chỉnh độ dày theo nhu cầu */
+    background-color: #C2C2C2; /* Màu sắc của đường ngang */
+    margin-top:12px;
+    margin-left:24px;
+    margin-right:41px;
+}
+#login .login_btn_sign_up a{
+    border: solid 1px #F53855!important;
+    color: #F53855 !important;
+    background-color: transparent;
+    font-weight:500;
+    width:90%;
+}
+#login .login_btn_sign_up a:hover{
+    background-color: #F53855;
+    color:white!important;
+}
+#login .login_btn_sign_up{
+    margin-top:12px;
+
+}
+
+#login .login_logo_name{
+    font-size:40px;
+    font-weight:600;
+    margin-top:10px;
+}
+#login .login_image image:hover{
+    transform: scale(1.1);
+}
+#login .login_image {
+    transition: transform 0.5s ease-out;
+}
+.login_image:hover .hover-effect {
+    transform: scale(1.1); 
+}
+#login .login_ml{
+    margin-left:90px;
+    margin-top:100px;
+}
+#login .padding-login{
+    padding-left:50px;
+}

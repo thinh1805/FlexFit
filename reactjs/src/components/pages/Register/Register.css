@@ -1,0 +1,83 @@
+#register img{
+    width: 60px;
+    height:60px;
+}
+#register .register_title p{
+    font-size:40px;
+    font-weight: 600;
+    color:#F53855;
+}
+#register .register_title{
+    margin-top:10px;
+    margin-left:5%;
+    margin-bottom: 20px;
+}
+
+#register .regitser_logo{
+    margin-left:2%;
+}
+#register .register_logo_name{
+    font-size:40px;
+    font-weight:600;
+    margin-top:20px;
+    margin-left:20px;
+}
+#register .register_logo{
+    margin-top:30px;
+}
+#register .register_form{
+    margin-left:5%;
+}
+#register input{
+    padding: 10px;
+    border-radius: 10px;
+    border:none;
+    outline:0;
+    background-color: #F1F3F6;
+    width: 400px;
+}
+#register .register_form .register_form_password{
+    margin-right:33.8%;
+    font-weight:500;
+}
+#register .register_form .register_form_confirm_password{
+    margin-right:27%;
+    font-weight:500;
+}
+#register .register_form .register_form_email{
+    margin-right:30.3%;
+    font-weight:500;
+}
+#register .register_form_name{
+    margin-right:37%;
+
+}
+#register .register_form p{
+    color:#555555;
+}
+#register .register_form_btn button{
+    color:white;
+    background-color: #F53855;
+    width:437px;
+    box-shadow:0px 5px 10px #FD74014D;
+}
+#register .register_form_btn{
+    margin-top:10px;
+}
+#register i{
+    color:white;
+    background-color: red;
+    padding-top:12px;
+    padding-bottom: 12px;
+    padding-left:12px;
+    padding-right: 12px;
+    border-radius: 8px;
+    font-size:18px;
+}
+
+#register button:hover{
+    border: solid 1px #F53855!important;
+    color: #F53855 !important;
+    background-color: white!important;
+}
+

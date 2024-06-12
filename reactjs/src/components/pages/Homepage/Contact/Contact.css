@@ -1,0 +1,41 @@
+#Contact .title input{
+    padding:6px;
+    background-color: white;
+    outline:0;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin-top:20px;
+}
+#Contact{
+    background-color: #e0e0e02b;
+}
+#Contact .description input{
+    padding:6px;
+    background-color: white;
+    outline:0;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding-bottom:100px;
+}
+#Contact .btn-send{
+    background-color: #F53855;
+    color:white;
+    width:140px;
+}
+#Contact .btn-send:hover{
+    background-color: transparent;
+    border:1px solid #F53855;
+    color:#F53855;
+}
+#Contact{
+    border-bottom: 1px solid #cccccc73;
+}
+#Contact .captone{
+    font-weight:500
+}
+#Contact .information{
+    margin-top:42px;
+}
+#Contact span{
+    font-weight: 500;
+}

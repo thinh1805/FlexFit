@@ -1,0 +1,226 @@
+#list_coaches .padding {
+    padding: 30px;
+    border: 1px solid #C4C4C4;
+    height: 400px;
+}
+
+#list_coaches .rating i,
+#list_coaches .list_coaches_star i {
+    color: #FFBF1A;
+    font-size: 23px;
+    margin-right: 10px;
+}
+
+#list_coaches .rating input {
+    margin-right: 30px;
+    width: 20px;
+    height: 18px;
+}
+
+#list_coaches .rating_title {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+#list_coaches .rating_star_flex {
+    display: flex;
+    align-items: center;
+}
+
+#list_coaches img {
+    width: 150px;
+    height: 200px;
+}
+
+#list_coaches .list_coaches_detail {
+    padding: 10px;
+    border: 1px solid #C4C4C4;
+}
+
+#list_coaches .list_coaches_container {
+    margin-left: 40px;
+}
+
+#list_coaches .list_coaches_padding {
+    padding-left: 30px;
+}
+
+#list_coaches .list_coaches_name {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+#list_coaches .list_coaches_items span {
+    padding-left: 20px;
+}
+
+#list_coaches .list_coaches_padding p {
+    margin-bottom: 5px;
+}
+
+#list_coaches .list_coaches_padding button {
+    margin-bottom: 12px;
+}
+
+#list_coaches .list_coaches_detail button {
+    background-color: #F53838;
+    color: white;
+    width: 100px;
+}
+
+#list_coaches .list_coaches_search button {
+    background-color: #F53838;
+    margin-left: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    color: white;
+}
+
+#list_coaches .list_coaches_search input {
+    outline: 0;
+    border: 1px solid #F53838;
+    padding-left: 10px;
+}
+
+#list_coaches .list_coaches_padding .point {
+    margin-left: 10px;
+    font-weight: 500;
+}
+
+#list_coaches .list_coaches_padding button:hover {
+    border: 1px solid #000;
+    background-color: white;
+    color: #F53838;
+}
+
+#list_coaches .list_coaches_items i {
+    font-size: 13px;
+}
+
+#list_coaches .list_coaches_items .list_coaches_location {
+    margin-left: 2px;
+}
+
+#list_coaches .list_coaches_items .list_coaches_birth {
+    margin-left: 2px;
+}
+
+#list_coaches .rating_star_flex {
+    margin-top: 10px;
+}
+
+#list_coaches .modal-content1 {
+    width: 800px;
+}
+
+#pay .modal-dialog {
+    max-width: 850px !important;
+    margin: 1.75rem auto;
+    background-color: #ccc;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 1px;
+    padding-bottom: 40px;
+}
+
+#pay .btn {
+    background-color: transparent;
+    color: #F53838;
+    border: 1px solid #F53838;
+    border-radius: 5px;
+    width:100px;
+}
+
+#pay .btn-money:hover {
+    cursor: pointer !important;
+    background-color: #F53838 !important;
+    color: white !important;
+}
+#pay .modal-content{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    width:auto!important
+}
+/* Specific styling for the subscription options */
+
+
+
+
+#list_coaches .pagination button {
+    font-size: 14px;
+    padding: 8px 12px;
+    margin-right: 8px;
+    border: 1px solid #000;
+    background-color: transparent;
+    color: #000;
+    cursor: pointer;
+}
+
+#list_coaches .pagination button:hover {
+    background-color: #F53838;
+    color: #fff;
+}
+
+#list_coaches .pagination .btn-next,
+#list_coaches .pagination .btn-prev {
+    width:55px;
+}
+
+#list_coaches .pagination .disabled {
+    border: 1px solid #ccc;
+    color: #ccc;
+    cursor: not-allowed;
+}
+
+#list_coaches .pagination .btn-active {
+    background-color: #F53838;
+    color: #fff;
+    border: 1px solid #F53838;
+}
+
+#list_coaches .pagination span {
+    margin-right: 20px;
+}
+
+#list_coaches .btn-next {
+    margin-right: 0;
+}
+
+#list_coaches .btn-prev:last-child {
+    margin-right: 20px;
+}
+
+#list_coaches .btn-next {
+    margin-right: 0;
+}
+
+#list_coaches .btn-prev:last-child {
+    margin-right: 20px;
+}
+
+#list_coaches .pagination .btn-prev {
+    order: 2;
+}
+
+#list_coaches .pagination .btn-next {
+    order: 3;
+}
+
+#list_coaches .pagination button:not(.disabled) ~ button:last-child {
+    display: inline-block;
+}
+
+#list_coaches .pagination .btn-prev,
+#list_coaches .pagination .btn-active,
+#list_coaches .pagination .btn-next {
+    display: inline-block; /* Hiển thị chỉ các nút prev, active và next */
+}
+
+#list_coaches .pagination .btn-prev + button,
+#list_coaches .pagination .btn-active + button {
+    display: inline-block; /* Hiển thị nút trang tiếp theo sau nút prev hoặc active */
+}
+#list_coaches .btn-next {
+    margin-right:59px!important;
+}

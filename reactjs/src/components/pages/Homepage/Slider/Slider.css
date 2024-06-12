@@ -1,0 +1,26 @@
+#slider .img-slider{
+    width:500px;
+}
+#slider .slider_title{
+    font-size:35px;
+    font-weight:500
+}
+#slider span{
+    font-size:40px;
+    font-weight: 700;
+}
+#slider button{
+    background-color: red;
+    width:200px;
+    padding:15px;
+    color:white;
+    font-weight: 500;
+    border-radius:10px;
+    box-shadow: 20px 20px 10px #d3d3d3;
+}
+#slider button:hover{
+    background-color: transparent;
+    border:1px solid red; 
+    color:red
+}
+

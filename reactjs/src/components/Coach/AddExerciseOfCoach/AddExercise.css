@@ -1,0 +1,152 @@
+#addexerciseofcoach .search-border {
+    border: 1px solid #0000001A;
+    padding: 10px;
+    width: 400px;
+    height: 40px;
+}
+
+#addexerciseofcoach .search-border i {
+    margin-left: 10px;
+}
+
+#addexerciseofcoach .search-border input {
+    border: none;
+    outline: 0;
+    margin-left: 20px;
+}
+#addexerciseofcoach .btn-search{
+    font-size:10px;
+    margin-left:10px;
+    height:40px;
+    width:70px;
+    color:white;
+    background-color:#F53838
+}
+#addexerciseofcoach .btn-search:hover{
+    background-color: transparent;
+    border:1px solid #F53838;
+    color:#F53838
+}
+
+#addexerciseofcoach .btn-add{
+    border: 1px solid #000;
+    background-color: transparent;
+    color:#F53838;
+    width:80px;
+}
+#addexerciseofcoach button:hover{
+    border: 1px solid #F53838;
+    background-color: transparent;
+    color: #F53838;
+}
+#addexerciseofcoach select{
+    padding-top:5px;
+    padding-bottom: 5px;
+    padding-right:7px;
+    padding-left:7px;
+    margin-top:3px;
+}
+#addexerciseofcoach .table input{
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-right: 5px;
+    padding-left: 5px;
+    margin-top:3px;
+}
+#addexerciseofcoach .pagination {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#addexerciseofcoach .pagination button {
+    font-size: 14px;
+    padding: 8px 12px;
+    margin-right: 8px;
+    border: 1px solid #000;
+    background-color: transparent;
+    color: #000;
+    cursor: pointer;
+}
+
+#addexerciseofcoach .pagination button:hover {
+    background-color: #F53838;
+    color: #fff;
+}
+
+#addexerciseofcoach .pagination .btn-next,
+#addmealofcoach .pagination .btn-prev {
+    width:55px;
+}
+
+#addexerciseofcoach .pagination .disabled {
+    border: 1px solid #ccc;
+    color: #ccc;
+    cursor: not-allowed;
+}
+
+#addexerciseofcoach .pagination .btn-active {
+    background-color: #F53838;
+    color: #fff;
+    border: 1px solid #F53838;
+}
+
+#addexerciseofcoach .pagination span {
+    margin-right: 20px;
+}
+
+#addexerciseofcoach .btn-next {
+    margin-right: 0;
+}
+
+#addexerciseofcoach .btn-prev:last-child {
+    margin-right: 20px;
+}
+
+#addexerciseofcoach .btn-next {
+    margin-right: 0;
+}
+
+#addexerciseofcoach .btn-prev:last-child {
+    margin-right: 20px;
+}
+
+#addexerciseofcoach .pagination .btn-prev {
+    order: 2;
+}
+
+#addexerciseofcoach .pagination .btn-next {
+    order: 3;
+}
+
+#addexerciseofcoach .pagination button:not(.disabled) ~ button:last-child {
+    display: inline-block;
+}
+
+#addexerciseofcoach .pagination .btn-prev,
+#addexerciseofcoach .pagination .btn-active,
+#addexerciseofcoach .pagination .btn-next {
+    display: inline-block; /* Hiển thị chỉ các nút prev, active và next */
+}
+
+#addexerciseofcoach .pagination .btn-prev + button,
+#addexerciseofcoach .pagination .btn-active + button {
+    display: inline-block; /* Hiển thị nút trang tiếp theo sau nút prev hoặc active */
+}
+#addexerciseofcoach .table_user{
+    height:395px;
+}
+#addexerciseofcoach .overflow-text {
+    max-width: 150px; /* Đặt giới hạn chiều rộng */
+    white-space: nowrap; /* Ngăn chặn quá trình ngắt dòng */
+    overflow: hidden; /* Ẩn nội dung vượt quá chiều rộng */
+    text-overflow: ellipsis; /* Hiển thị dấu chấm ba khi có nội dung vượt quá */
+}
+#addexerciseofcoach .link{
+    text-decoration: none;
+    color:black;
+}
+#addexerciseofcoach .link:hover{
+    cursor: pointer;
+    color:#F53838
+}

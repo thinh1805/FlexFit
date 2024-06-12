@@ -1,0 +1,23 @@
+#alert img{
+    width:100px;
+}
+#alert .alert_border{
+    border: solid 1px #F53838;
+    border-radius: 10px;
+    padding:15px;
+}
+#alert button{
+    width:130px;
+    border: solid 1px #F53855!important;
+    color: #F53855 !important;
+}
+#alert span{
+    font-weight: 800;
+    font-size:25px;
+}
+#alert .alert_title p{
+    font-size: 20px;
+}
+#alert .btn-hire-coach{
+    margin-right:30px;
+}

@@ -1,0 +1,22 @@
+.menu_detail i{
+    margin-right:18px;
+    margin-top:6px;
+}
+.menu_detail a{
+    text-decoration: none;
+    color:#131313;
+    display:block;
+    font-size:15px;
+}
+.menu_detail .w{
+    width:30px;
+}
+.menu_detail a:hover{
+    color:#F53838;
+}
+.menu_detail{
+    opacity: 0.7;
+}
+.menu_detail i{
+    width:16px;
+}

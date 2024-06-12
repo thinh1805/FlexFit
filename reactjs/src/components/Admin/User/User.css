@@ -1,0 +1,216 @@
+#user .logo img{
+    width:45px;
+    height:45px;
+}
+#user .border-container{
+    border: 1px solid #0000001A;
+    height:558px;
+}
+#user .logo p{
+    margin-top:16px;
+    margin-left:10px;
+    font-weight:700;
+    font-size:23px;
+}
+#user .search-border{
+    border:1px solid #0000001A ;
+    padding: 10px;
+    width:400px;
+    margin-left:50px;
+    height: 40px;
+}
+#user .search-border i{
+    margin-left:10px;
+}
+#user .search-border input{
+    border:none;
+    outline:0;
+    margin-left:20px;
+}
+#user .img_personal img{
+    width:50px; 
+}
+#user .padding{
+    padding-left:20px;
+    padding-right:40px;
+}
+#user .padding {
+    font-size:11px;
+}
+#user .table_user {
+    font-size: 14px;
+}
+#user .table{
+    text-align: center;
+}
+#user .table i{
+    color:red;
+}
+#user .avatar img,
+#user .degree img{
+    width:50px;
+    height:50px;
+}
+table {
+    width: 100%;
+}
+th, td {
+    border: 1px solid #dddddd;
+    text-align: center;
+    white-space: nowrap; /* Ngăn chặn việc wrap nội dung trong ô */
+    overflow: hidden; /* Ẩn phần dư thừa của nội dung */
+    text-overflow: ellipsis; /* Hiển thị dấu ... khi nội dung quá dài */;
+}
+.overflow-text {
+    max-width: 230px; /* Đặt giới hạn chiều rộng */
+    white-space: nowrap; /* Ngăn chặn quá trình ngắt dòng */
+    overflow: hidden; /* Ẩn nội dung vượt quá chiều rộng */
+    text-overflow: ellipsis; /* Hiển thị dấu chấm ba khi có nội dung vượt quá */
+}
+th, td {
+    width: calc(100% / 9); /* Có 9 cột, nên chia đều 100% cho các cột */
+}
+/* Điều chỉnh kích thước của ô checkbox */
+
+#user .btn-search{
+    font-size:10px;
+    margin-left:10px;
+    height:40px;
+    width:70px;
+    color:white;
+    background-color:#F53838
+}
+#user button:hover{
+    background-color: transparent;
+    color:#F53838;
+    border:1px solid #F53838;
+}
+#user .search{
+    margin-top:37px;
+}
+#user .table_user i{
+    cursor:pointer;
+}
+#user .table_user i:hover{
+    opacity:0.7
+}
+#addmeal .pagination button.disabled {
+    border: 1px solid gray;
+    background-color: transparent; /* Chọn màu sắc tùy ý */
+    color: white; /* Chọn màu sắc tùy ý */
+    cursor: not-allowed;
+    color:black;
+}
+
+#user .pagination span{
+    margin-top:12px;
+    margin-right:20px;
+}
+#user .pagination .btn-next,
+#user .pagination .btn-prev{
+    width:80px;
+}
+#user .pagination .btn-next{
+    border:1px solid black;
+    margin-right:20px;
+}
+#user .pagination .btn-next:hover{
+    border:1px solid #F53838;
+}
+#user .table_user{
+    height:395px;
+}
+#user .btn-prev{
+    border:1px solid black;
+    margin-right:20px;
+}
+#user td{
+    line-height: 3;
+}
+#user th{
+    line-height: 3;
+}
+
+
+
+/* css mẫu */
+#user .pagination {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#user .pagination button {
+    font-size: 14px;
+    padding: 8px 12px;
+    margin-right: 8px;
+    border: 1px solid #000;
+    background-color: transparent;
+    color: #000;
+    cursor: pointer;
+}
+
+#user .pagination button:hover {
+    background-color: #F53838;
+    color: #fff;
+}
+
+#user .pagination .btn-next,
+#user .pagination .btn-prev {
+    width:55px;
+}
+
+#user .pagination .disabled {
+    border: 1px solid #ccc;
+    color: #ccc;
+    cursor: not-allowed;
+}
+
+#user .pagination .btn-active {
+    background-color: #F53838;
+    color: #fff;
+    border: 1px solid #F53838;
+}
+
+#user .pagination span {
+    margin-right: 20px;
+}
+
+#user .btn-next {
+    margin-right: 0;
+}
+
+#user .btn-prev:last-child {
+    margin-right: 20px;
+}
+
+#user .btn-next {
+    margin-right: 0;
+}
+
+#user .btn-prev:last-child {
+    margin-right: 20px;
+}
+
+#user .pagination .btn-prev {
+    order: 2;
+}
+
+#user .pagination .btn-next {
+    order: 3;
+}
+
+#user .pagination button:not(.disabled) ~ button:last-child {
+    display: inline-block;
+}
+
+#user .pagination .btn-prev,
+#user .pagination .btn-active,
+#user .pagination .btn-next {
+    display: inline-block; /* Hiển thị chỉ các nút prev, active và next */
+}
+
+#user .pagination .btn-prev + button,
+#user .pagination .btn-active + button {
+    display: inline-block; /* Hiển thị nút trang tiếp theo sau nút prev hoặc active */
+}

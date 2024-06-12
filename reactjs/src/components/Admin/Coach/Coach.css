@@ -1,0 +1,188 @@
+#coach .logo img{
+    width:45px;
+    height:45px;
+}
+#coach .border-container{
+    border: 1px solid #0000001A;
+    height:558px;
+}
+#coach .logo p{
+    margin-top:16px;
+    margin-left:10px;
+    font-weight:700;
+    font-size:23px;
+}
+#coach .search-border{
+    border:1px solid #0000001A ;
+    padding: 10px;
+    width:400px;
+    margin-left:50px;
+    height: 40px;
+}
+#coach .search-border i{
+    margin-left:10px;
+}
+#coach .search-border input{
+    border:none;
+    outline:0;
+    margin-left:20px;
+}
+#coach .img_personal img{
+    width:50px; 
+}
+#coach .padding{
+    padding-left:20px;
+    padding-right:40px;
+}
+#coach .padding {
+    font-size:11px;
+}
+#coach .table_user {
+    font-size: 14px;
+    height:395px;
+}
+
+#coach .table{
+    text-align: center;
+}
+#coach .table i{
+    color:red;
+}
+#coach .table input{
+    height:18px;
+    width:18px;
+    border-radius: 10%;
+}
+#coach .avatar img,
+#coach .degree img{
+    width:50px;
+    height:50px;
+}
+#coach td{
+    line-height: 4;
+}
+#coach th{
+    line-height: 3;
+}
+#coach .btn-search{
+    font-size:10px;
+    margin-left:10px;
+    height:40px;
+    width:70px;
+    color:white;
+    background-color:#F53838
+}
+#coach button:hover{
+    background-color: transparent;
+    color:#F53838;
+    border:1px solid #F53838;
+}
+#coach .search{
+    margin-top:37px;
+}
+#coach .table_user i:hover{
+    cursor: pointer;
+}
+table {
+    width: 100%;
+}
+th, td {
+    border: 1px solid #dddddd;
+    text-align: center;
+    white-space: nowrap; /* Ngăn chặn việc wrap nội dung trong ô */
+    overflow: hidden; /* Ẩn phần dư thừa của nội dung */
+    text-overflow: ellipsis; /* Hiển thị dấu ... khi nội dung quá dài */;
+}
+.overflow-text {
+    max-width: 230px; /* Đặt giới hạn chiều rộng */
+    white-space: nowrap; /* Ngăn chặn quá trình ngắt dòng */
+    overflow: hidden; /* Ẩn nội dung vượt quá chiều rộng */
+    text-overflow: ellipsis; /* Hiển thị dấu chấm ba khi có nội dung vượt quá */
+}
+th, td {
+    width: calc(100% / 9); /* Có 9 cột, nên chia đều 100% cho các cột */
+}
+
+
+
+/* coach mẫu */
+#coach .pagination {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#coach .pagination button {
+    font-size: 14px;
+    padding: 8px 12px;
+    margin-right: 8px;
+    border: 1px solid #000;
+    background-color: transparent;
+    color: #000;
+    cursor: pointer;
+}
+
+#coach .pagination button:hover {
+    background-color: #F53838;
+    color: #fff;
+}
+
+#coach .pagination .btn-next,
+#coach .pagination .btn-prev {
+    width:55px;
+}
+
+#coach .pagination .disabled {
+    border: 1px solid #ccc;
+    color: #ccc;
+    cursor: not-allowed;
+}
+
+#coach .pagination .btn-active {
+    background-color: #F53838;
+    color: #fff;
+    border: 1px solid #F53838;
+}
+
+#coach .pagination span {
+    margin-right: 20px;
+}
+
+#coach .btn-next {
+    margin-right: 0;
+}
+
+#coach .btn-prev:last-child {
+    margin-right: 20px;
+}
+
+#coach .btn-next {
+    margin-right: 0;
+}
+
+#coach .btn-prev:last-child {
+    margin-right: 20px;
+}
+
+#coach .pagination .btn-prev {
+    order: 2;
+}
+
+#coach .pagination .btn-next {
+    order: 3;
+}
+
+#coach .pagination button:not(.disabled) ~ button:last-child {
+    display: inline-block;
+}
+
+#coach .pagination .btn-prev,
+#coach .pagination .btn-active,
+#coach .pagination .btn-next {
+    display: inline-block; /* Hiển thị chỉ các nút prev, active và next */
+}
+
+#coach .pagination .btn-prev + button,
+#coach .pagination .btn-active + button {
+    display: inline-block; /* Hiển thị nút trang tiếp theo sau nút prev hoặc active */
+}

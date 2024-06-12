@@ -1,0 +1,253 @@
+#addmeal .logo img{
+    width:45px;
+    height:45px;
+}
+#addmeal .search-border{
+    border:1px solid #0000001A ;
+    padding: 10px;
+    width:400px;
+    margin-left:50px;
+    height: 40px;
+}
+#addmeal .search-border i{
+    margin-left:10px;
+}
+#addmeal .search-border input{
+    border:none;
+    outline:0;
+    margin-left:20px;
+}
+#addmeal .img_personal img{
+    width:50px; 
+}
+
+#addmeal .padding{
+    padding-left:20px;
+    padding-right:40px;
+}
+#addmeal .padding {
+    font-size:11px;
+}
+
+#addmeal .table{
+    text-align: center;
+}
+#addmeal .table i{
+    color:red;
+}
+#addmeal .table a{
+    margin-right:10px;
+}
+/* #addmeal .btn-addMeal{
+    font-size: 10px;
+    border:1px solid #000000;
+    color:red;
+} */
+#addmeal select{
+    padding-top:5px;
+    padding-bottom: 5px;
+    padding-right:7px;
+    padding-left:7px;
+}
+#addmeal button:hover{
+    border: 1px solid #F53838;
+    background-color: transparent;
+    color: #F53838;
+}
+
+#addmeal .modal-body input,
+#addmeal .modal-body select{
+    padding:2px;
+}
+#addmeal .btn-addMeal{
+    font-size: 10px;
+    border: 1px solid #000;
+    background-color: transparent;
+    color:#F53838;
+    padding:8px;
+    width:70px!important;
+}
+#addmeal .btn-cancel{
+    background-color: white;
+    color:#F53838;
+    width:100px;
+}
+#addmeal .btn-cancel:hover{
+    border:1px solid #000;
+}
+#addmeal .btn-search{
+    font-size:10px;
+    margin-left:10px;
+    height:40px;
+    width:70px;
+    color:white;
+    background-color:#F53838
+}
+#addmeal .menu_detail a:hover{
+    color:#F53838;
+}
+#addmeal .border-container{
+    border: 1px solid #0000001A;
+    height:558px;
+}
+#addmeal .logo p{
+    margin-top:16px;
+    margin-left:10px;
+    font-weight:700;
+    font-size:23px;
+}
+#addmeal .table_user {
+    font-size: 14px;
+}
+#addmeal .table input{
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-right: 5px;
+    padding-left: 5px;
+}
+#addmeal .search{
+    margin-top:37px;
+}
+#addmeal .pagination button.disabled {
+    border: 1px solid gray;
+    background-color: transparent; /* Chọn màu sắc tùy ý */
+    color: white; /* Chọn màu sắc tùy ý */
+    cursor: not-allowed;
+    color:black;
+}
+
+#addmeal .pagination span{
+    margin-top:12px;
+    margin-right:20px;
+}
+#addmeal .pagination .btn-next,
+#addmeal .pagination .btn-prev{
+    width:80px;
+}
+#addmeal .pagination .btn-next{
+    border:1px solid black;
+    margin-right:20px;
+}
+#addmeal .pagination .btn-next:hover{
+    border:1px solid #F53838;
+}
+#addmeal .table_user{
+    height:395px;
+}
+#addmeal .btn-prev{
+    border:1px solid black;
+    margin-right:20px;
+}
+
+
+
+
+/* css mẫu */
+#addmeal .pagination {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#addmeal .pagination button {
+    font-size: 14px;
+    padding: 8px 12px;
+    margin-right: 8px;
+    border: 1px solid #000;
+    background-color: transparent;
+    color: #000;
+    cursor: pointer;
+}
+
+#addmeal .pagination button:hover {
+    background-color: #F53838;
+    color: #fff;
+}
+
+#addmeal .pagination .btn-next,
+#addmeal .pagination .btn-prev {
+    width:55px;
+}
+
+#addmeal .pagination .disabled {
+    border: 1px solid #ccc;
+    color: #ccc;
+    cursor: not-allowed;
+}
+
+#addmeal .pagination .btn-active {
+    background-color: #F53838;
+    color: #fff;
+    border: 1px solid #F53838;
+}
+
+#addmeal .pagination span {
+    margin-right: 20px;
+}
+
+#addmeal .btn-next {
+    margin-right: 0;
+}
+
+#addmeal .btn-prev:last-child {
+    margin-right: 20px;
+}
+
+#addmeal .btn-next {
+    margin-right: 0;
+}
+
+#addmeal .btn-prev:last-child {
+    margin-right: 20px;
+}
+
+#addmeal .pagination .btn-prev {
+    order: 2;
+}
+
+#addmeal .pagination .btn-next {
+    order: 3;
+}
+
+#addmeal .pagination button:not(.disabled) ~ button:last-child {
+    display: inline-block;
+}
+
+#addmeal .pagination .btn-prev,
+#addmeal .pagination .btn-active,
+#addmeal .pagination .btn-next {
+    display: inline-block; /* Hiển thị chỉ các nút prev, active và next */
+}
+
+#addmeal .pagination .btn-prev + button,
+#addmeal .pagination .btn-active + button {
+    display: inline-block; /* Hiển thị nút trang tiếp theo sau nút prev hoặc active */
+}
+
+#addmeal i:hover{
+    cursor:pointer;
+    color:#F53838
+}
+#addmeal .modal-body input,
+#addmeal .modal-body select{
+    padding:5px;
+}
+#addmeal .btn-add{
+    background-color:#F53838 ;
+    color:white;
+    width:100px;
+    margin-right: 10px;
+}
+#addmeal .btn-cancel{
+    background-color: white;
+    color:#F53838;
+    width:100px;
+}
+#addmeal .btn-add:hover{
+    border: 1px solid #F53838;
+    background-color: transparent;
+    color:#F53838;
+}
+#addmeal .btn-cancel:hover{
+    border:1px solid #F53838;
+}

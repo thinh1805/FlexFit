@@ -1,0 +1,126 @@
+#header{
+    margin-top:20px;
+    margin-bottom: 50px;
+}
+#header .header-content a,
+#header .header-logo a{
+    text-decoration: none;
+    color: black;
+    padding:10px;
+    margin-left:20px;
+}
+#header .header-content-coach a{
+    text-decoration: none;
+    color: black;
+    padding:10px;
+    margin-left:50px;
+}
+#header .btn-sign-up{
+    border: solid 1px #F53855;
+    color: #F53855;
+    margin-left:15px;
+}
+#header .btn-sign-up,
+#header .btn-sign-in{
+    border-radius:100px!important;
+    font-weight:600!important;
+}
+#header .btn-sign-up:hover{
+    background-color: #F53855;
+    color:white;
+}
+#header .btn-sign-in:hover{
+    border:1px solid #F53855;
+    color :#F53855;
+}
+
+#header .header-logo{
+    margin-top: 7px;
+}
+#header .header-content,
+#header .header-content-coach{
+    margin-top: 9px;
+}
+#header img{
+    width:30px;
+    margin-right:20px;
+}
+
+#header .header-content a:hover,
+#header .header-content-coach a:hover,
+#header .header-logo a:hover{
+    color:#F53855
+}
+#header .margin-right{
+    margin-right:40px;
+    margin-top:3px;
+}
+#header .margin-right .bell-main{
+    font-size:20px;
+}
+#header .dropdown img{
+    width:40px;
+    height:40px;
+    border-radius: 50%;
+}
+#header .dropdown img:hover{
+    cursor:pointer;
+}
+#header .role{
+    margin-top:5px;
+    margin-left:20px;
+}
+#header .user i{
+    margin-right:20px;
+    color:#F53855;
+}
+#header .margin-right .dropdown-menu{
+    position: absolute;
+    inset: 0px auto auto 0px;
+    margin: 0px;
+    width: 250px!important;
+    transform: translate3d(-110px, 29.3333px, 0px)!important;
+}
+#header .margin-right .title{
+    font-weight:500;
+    color:#F53855;
+    font-size:20px;
+}
+#header .margin-right span{
+    font-size:15px;
+    margin-top:10px!important;
+}
+#header .margin-right i{
+    margin-left:10px;
+}
+
+#header .hire {
+    display:inline-block;
+    text-decoration: none;
+    color:black;
+    font-size:12px;
+    font-weight:300;
+}
+#header .dropdown-menu a:hover{
+    color:#F53855;
+}
+#header .notification-information p{
+    margin-top:4px;
+    font-size:13px!important;
+}
+#header .border-dropdown i {
+    border-radius: 40px;
+    border:1px solid #F53855;
+    color:#F53855;
+    padding:5px;
+}
+#header .dropdown-menu i{
+    margin-right:10px;
+    height:27px;
+}
+#header .dropdown-menu p{
+    font-size:12px;
+}
+.btn-click{
+    width:120px!important;
+}

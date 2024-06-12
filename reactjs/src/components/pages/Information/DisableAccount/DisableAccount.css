@@ -1,0 +1,95 @@
+#DisableAccount span{
+    margin-left:40px;
+}
+#DisableAccount {
+    margin-top:50px;
+}
+#DisableAccount i:hover {
+    cursor: pointer;
+}
+#DisableAccount .DisableAccount_detail {
+    padding-left:20px;
+    padding-top:10px;
+}
+#DisableAccount .DisableAccount_detail i{
+    color:#858585
+}
+#DisableAccount a{
+    text-decoration: none;
+}
+#DisableAccount .DisableAccount_setting a{
+    color:black;
+}
+#DisableAccount .DisableAccount_border{
+    border-right:1px solid #858585;
+}
+#DisableAccount .DisableAccount_notification img{
+    width:30px;
+    margin-bottom: 3px;
+}
+#DisableAccount .DisableAccount_notification {
+    float:right;
+}
+#DisableAccount .DisableAccount_padding{
+    padding-left:80px;
+}
+#DisableAccount input{
+    padding-top:8px;
+    padding-bottom: 8px;
+    padding-right:5px;
+    padding-left:5px;
+    border-radius: 8px;
+    outline:0;
+    border:1px solid #858585;
+}
+#DisableAccount button{
+    width:150px;
+}
+#DisableAccount .btn-cancel button{
+    border: solid 1px #F53855!important;
+    color: #F53855 !important;
+}
+#DisableAccount .btn-save button{
+    background-color:#F53855 !important;
+    color:white;
+}
+#DisableAccount .DisableAccount_image img{
+    width:70px;
+    height:70px;
+}
+#DisableAccount .DisableAccount_title{
+    padding-top:20px;
+}
+#DisableAccount .DisableAccount_notification i{
+    margin-right:20px;
+    background-color: #ccc;
+    padding:10px;
+    color:red;
+    border-radius:10px;
+}
+#DisableAccount a{
+    display:block;
+}
+#DisableAccount span:hover {
+    color:red;
+}
+#DisableAccount .padding-security{
+    margin-left:55px;
+}
+#DisableAccount .padding-security a{
+   font-size: 12px;
+   color:#858585
+}
+#DisableAccount .DisableAccount_detail{
+    padding-left: 20px;
+    padding-top: 10px;
+}
+#DisableAccount .padding-security a:hover{
+    color:red
+}
+#DisableAccount .padding-security i{
+    margin-right:13px;
+}
+#DisableAccount a{
+    color:#858585
+}

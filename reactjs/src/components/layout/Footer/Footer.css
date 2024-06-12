@@ -1,0 +1,28 @@
+#footer{
+    background-color: #F8F8F8;
+}
+#footer i{
+    font-size:50px;
+    color:red;
+    background-color: #ffffff;
+    border-radius: 30px;
+    padding:10px;
+}
+#footer img{
+    width:45px;
+    margin-right:10px;
+}
+#footer .footer_title{
+    padding-right:40px;
+}
+#footer .mr{
+    margin-right: 100px;
+}
+#footer a{
+    text-decoration: none;
+    color:black;
+}
+#footer .footer_description {
+    padding-right:150px;
+    padding-left:40px;
+}

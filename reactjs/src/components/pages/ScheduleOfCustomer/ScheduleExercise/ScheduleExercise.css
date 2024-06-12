@@ -1,0 +1,59 @@
+#ScheduleExercise .border-information{
+    border:1px solid #F53855;
+    border-radius: 10px;
+}
+
+
+#ScheduleExercise .padding-information {
+    border:1px solid black;
+    padding:50px;
+}
+#ScheduleExercise .padding-information input{
+    padding-bottom: 63px;
+    width:251px;
+}
+#ScheduleExercise  .col-sm-12{
+    margin-bottom: 50px;
+}
+.padding-information {
+    /* height: 0; */
+    overflow: hidden;
+    transition: height 0.5s ease-out, opacity 0.5s ease-out;
+    opacity: 0;
+}
+
+.padding-information.expanded {
+    height: auto; /* Đặt height tự động khi mở rộng */
+    opacity: 1;
+    /* Thiết lập lại chiều cao cụ thể để kích hoạt chuyển động */
+    transition: height 0.5s ease-out, opacity 0.5s ease-out;
+}
+#ScheduleExercise .btn-submit{
+    background-color: transparent;
+    border:1px solid #F53855;
+    color:#F53855;
+    width:150px;
+}
+.btn-submit:hover{
+    background-color: #F53855;
+    color:white;
+}
+/* .thinh{
+    height:1000px!important;
+} */
+#ScheduleExercise {
+    margin-top: 20px;
+}
+.thinh{
+    height:400px;
+    width:600px;
+    margin:auto;
+    margin-top:20px;
+}
+#ScheduleExercise .input-comment{
+    padding-bottom:30px;
+    outline: 0;
+    padding-left:10px;
+    padding-top:10px;
+    width:300px;
+}

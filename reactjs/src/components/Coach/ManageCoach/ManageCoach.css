@@ -1,0 +1,81 @@
+#ManageCoach .padding{
+    padding:30px; 
+    border: 1px solid #C4C4C4;
+    height:400px;
+}
+#ManageCoach img{
+    width:150px;
+    height:190px;
+}
+#ManageCoach .email{
+    font-size: 14px!important;
+}
+#ManageCoach .img-flex{
+    justify-content: center;
+    align-items: center;
+    display:flex;
+}
+#ManageCoach .ManageCoach_detail{
+    padding:10px;
+    border: 1px solid #C4C4C4;
+}
+#ManageCoach .ManageCoach_container{
+    margin-left: 40px;
+}
+#ManageCoach .ManageCoach_padding{
+    padding-left:30px;
+}
+#ManageCoach .ManageCoach_name{
+    font-size:18px;
+    font-weight:500
+}
+#ManageCoach .ManageCoach span{
+    padding-left:20px;
+}
+#ManageCoach .ManageCoach_padding p{
+    margin-bottom: 5px;
+}
+#ManageCoach .ManageCoach_padding button{
+    margin-bottom: 12px;
+}
+#ManageCoach .ManageCoach_detail button{
+    background-color:#F53838;
+    color:white;
+    width: 100px;
+}
+#ManageCoach .ManageCoach_search button{
+    background-color: #F53838;
+    margin-left:10px;
+    padding-left:15px;
+    padding-right:15px;
+    color:white;
+}
+#ManageCoach .ManageCoach_search input{
+    outline:0;
+    border: 1px solid #F53838;
+    padding-left:10px;
+}
+#ManageCoach .ManageCoach_padding .point{
+    margin-left:10px;
+    font-weight:500
+}
+#list_coaches .ManageCoach_padding button:hover{
+    border:1px solid #000;
+    background-color: white;
+    color:#F53838
+}
+#ManageCoach .ManageCoach_items i{
+    font-size: 13px;
+    margin-right:15px;
+}
+
+.height{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    margin: auto;
+}
+.height p{
+    font-size: 30px;
+}

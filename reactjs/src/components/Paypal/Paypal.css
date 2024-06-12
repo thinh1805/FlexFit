@@ -1,0 +1,61 @@
+#pay{
+    background-color: #F8F8F8;
+}
+#pay .pay_title{
+    font-size: 35px;
+    font-weight: 600;
+}
+#pay .border{
+    border: 1px solid #DDDDDD;
+    border-radius: 10px;
+}
+#pay img{
+    width:144px;
+}
+#pay .pay_one_month,
+#pay .pay_three_month,
+#pay .pay_six_month{
+    margin-bottom:180px;
+    margin-top:50px;
+}
+#pay i{
+    color:rgba(28, 128, 0, 0.701);
+    margin-left:20px;
+}
+#pay .pay_detail span{
+    margin-left:30px;
+}
+#pay .pay_detail{
+    margin-bottom: 180px;
+    margin-left:20px;
+}
+#pay .mr{
+    margin-right: 30px;
+}
+#pay .width{
+    width:33.33%;
+    margin-right:50px;
+}
+#pay .pay_money span{
+    font-size:20px;
+    font-weight: 700;
+}
+#pay .pay_money p{
+    font-size:20px;
+}
+#pay button{
+    border: solid 1px #F53838!important;
+    color: #F53838 !important;
+    width:50%;
+    border-radius:40px;
+}
+#pay button:hover{
+    background-color:#F53838!important ;
+    color:white!important;
+}
+.width.border {
+    transition: box-shadow 0.3s ease; /* Thêm transition cho đổ bóng */
+}
+.width.border.hovered {
+    box-shadow: 0 0 3px red; /* Màu đổ bóng khi chạm vào nút */
+}

@@ -1,0 +1,29 @@
+#statistics{
+    margin-top:50px;
+    margin-left:20px;
+}
+#statistics .statistics_image img{
+    width:50px;
+    height:50px;
+    margin-top:10px;
+}
+#statistics .box-shadow{
+    box-shadow: 2px 10px 20px 5px #d3d3d3;
+    border-radius: 10px;
+}
+#statistics .border-right{
+    border-right: solid 1px #00000038;
+    margin-top:15px;
+    margin-bottom: 15px;
+}
+#statistics .margin{
+    margin-top:15px;
+    margin-bottom:15px;
+}
+#statistics .padding{
+    padding-left:35px;
+    margin-top:10px;
+}
+#statistics .font-weight{
+    font-weight:750
+}

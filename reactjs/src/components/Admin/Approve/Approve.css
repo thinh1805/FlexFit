@@ -1,0 +1,185 @@
+table {
+    width: 100%;
+}
+th, td {
+    border: 1px solid #dddddd;
+    text-align: center;
+    white-space: nowrap; /* Ngăn chặn việc wrap nội dung trong ô */
+    overflow: hidden; /* Ẩn phần dư thừa của nội dung */
+    text-overflow: ellipsis; /* Hiển thị dấu ... khi nội dung quá dài */;
+}
+.overflow-text {
+    max-width: 230px; /* Đặt giới hạn chiều rộng */
+    white-space: nowrap; /* Ngăn chặn quá trình ngắt dòng */
+    overflow: hidden; /* Ẩn nội dung vượt quá chiều rộng */
+    text-overflow: ellipsis; /* Hiển thị dấu chấm ba khi có nội dung vượt quá */
+}
+th, td {
+    width: calc(100% / 9); /* Có 9 cột, nên chia đều 100% cho các cột */
+}
+#Approve .logo img{
+    width:45px;
+    height:45px;
+}
+#Approve .border-container{
+    border: 1px solid #0000001A;
+    height:558px;
+}
+#Approve .logo p{
+    margin-top:16px;
+    margin-left:10px;
+    font-weight:700;
+    font-size:23px;
+}
+#Approve .search-border{
+    border:1px solid #0000001A ;
+    padding: 10px;
+    width:400px;
+    margin-left:50px;
+    height: 40px;
+}
+#Approve .search-border i{
+    margin-left:10px;
+}
+#Approve .search-border input{
+    border:none;
+    outline:0;
+    margin-left:20px;
+}
+#Approve .img_personal img{
+    width:50px; 
+}
+#Approve .padding{
+    padding-left:20px;
+    padding-right:40px;
+}
+
+#Approve .table_user {
+    font-size: 14px;
+    height:395px;
+}
+#Approve .table{
+    text-align: center;
+}
+#Approve .table i{
+    color:red;
+}
+#Approve .table input{
+    height:18px;
+    width:18px;
+    border-radius: 10%;
+}
+#Approve .avatar img,
+#Approve .degree img{
+    width:50px;
+    height:50px;
+}
+#Approve td{
+    line-height: 4;
+}
+#Approve th{
+    line-height: 3;
+}
+#Approve .btn-search{
+    font-size:10px;
+    margin-left:10px;
+    height:40px;
+    width:70px;
+    color:white;
+    background-color:#F53838
+}
+#Approve button:hover{
+    background-color: transparent;
+    color:#F53838;
+    border:1px solid #F53838;
+}
+#Approve .search{
+    margin-top:37px;
+}
+#Approve .table_user i:hover{
+    cursor: pointer;
+}
+
+
+
+/* css mẫu */
+#Approve .pagination {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#Approve .pagination button {
+    font-size: 14px;
+    padding: 8px 12px;
+    margin-right: 8px;
+    border: 1px solid #000;
+    background-color: transparent;
+    color: #000;
+    cursor: pointer;
+}
+
+#Approve .pagination button:hover {
+    background-color: #F53838;
+    color: #fff;
+}
+
+#Approve .pagination .btn-next,
+#Approve .pagination .btn-prev {
+    width:55px;
+}
+
+#Approve .pagination .disabled {
+    border: 1px solid #ccc;
+    color: #ccc;
+    cursor: not-allowed;
+}
+
+#Approve .pagination .btn-active {
+    background-color: #F53838;
+    color: #fff;
+    border: 1px solid #F53838;
+}
+
+#Approve .pagination span {
+    margin-right: 20px;
+}
+
+#Approve .btn-next {
+    margin-right: 0;
+}
+
+#Approve .btn-prev:last-child {
+    margin-right: 20px;
+}
+
+#Approve .btn-next {
+    margin-right: 0;
+}
+
+#Approve .btn-prev:last-child {
+    margin-right: 20px;
+}
+
+#Approve .pagination .btn-prev {
+    order: 2;
+}
+
+#Approve .pagination .btn-next {
+    order: 3;
+}
+
+#Approve .pagination button:not(.disabled) ~ button:last-child {
+    display: inline-block;
+}
+
+#Approve .pagination .btn-prev,
+#Approve .pagination .btn-active,
+#Approve .pagination .btn-next {
+    display: inline-block; /* Hiển thị chỉ các nút prev, active và next */
+}
+
+#Approve .pagination .btn-prev + button,
+#Approve .pagination .btn-active + button {
+    display: inline-block; /* Hiển thị nút trang tiếp theo sau nút prev hoặc active */
+}

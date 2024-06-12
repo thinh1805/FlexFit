@@ -1,0 +1,34 @@
+#Informationcustomer .border-detail{
+    border:1px solid black
+}
+#Informationcustomer .btn-cancel{
+    border:1px solid #F53855;
+    color:#F53855;
+}
+#Informationcustomer .btn-accept{
+    background-color: #F53855;
+    color:white;
+}
+#Informationcustomer .btn-cancel{
+    margin-right:30px;
+}
+#Informationcustomer .btn-accept,
+#Informationcustomer .btn-cancel{
+    width:130px;
+}
+#Informationcustomer .btn-cancel:hover{
+    background-color: #F53855;
+    color:white;
+}
+#Informationcustomer .btn-accept:hover{
+    border:1px solid #F53855;
+    color:#F53855;
+    background-color: transparent;
+}
+#Informationcustomer .border-detail span{
+    display: inline-block;
+    width: 110px; /* Đặt chiều rộng mong muốn của span */
+} 
+#Informationcustomer .border-detail .col-sm-6{
+    padding-left:17%;
+}

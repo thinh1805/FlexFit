@@ -1,0 +1,627 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>BodyVisualiser</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <link rel="stylesheet" href="/reactjs/src/components/Body/css/style.css">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> -->
+    <style>
+        /* CSS cho alert modal */
+        #alert {
+            display: none;
+            /* Ẩn modal mặc định */
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            /* Cho phép cuộn khi nội dung quá lớn */
+            background-color: rgba(0, 0, 0, 0.4);
+            /* Tạo một lớp mờ */
+        }
+
+        /* CSS cho nội dung alert */
+        .alert-container {
+            background-color: #fefefe;
+            margin: 10% auto;
+            /* Canh giữa nội dung alert */
+            padding: 20px;
+            border: 1px solid #888;
+            width: 30%;
+        }
+
+        #alert img {
+            width: 100px;
+        }
+
+        #alert .alert_border {
+            border: solid 1px #F53838;
+            border-radius: 10px;
+            padding: 15px;
+        }
+
+        #alert button {
+            width: 130px;
+            border: solid 1px #F53855 !important;
+            color: #F53855 !important;
+            padding: 5px;
+            background-color: #fefefe;
+        }
+
+        #alert button:hover {
+            cursor: pointer;
+            background-color: #F53838;
+            color: white !important;
+        }
+
+        #alert span {
+            font-weight: 800;
+            font-size: 25px;
+        }
+
+        #alert .alert_title p {
+            font-size: 20px;
+        }
+
+        #alert .btn-hire-coach {
+            margin-right: 30px;
+        }
+        #header{
+            margin-top:20px!important;
+        }
+        #header .header-content a,
+        #header .header-logo a{
+            text-decoration: none;
+            color: black;
+            padding:10px;
+            margin-left:20px;
+        }
+        #header .header-content-coach a{
+            text-decoration: none;
+            color: black;
+            padding:10px;
+            margin-left:50px;
+        }
+        #header .btn-sign-up{
+            border: solid 1px #F53855;
+            color: #F53855;
+            margin-left:15px;
+        }
+        #header .btn-sign-up,
+        #header .btn-sign-in{
+            border-radius:100px!important;
+            font-weight:600!important;
+        }
+        #header .btn-sign-up:hover{
+            background-color: #F53855;
+            color:white;
+        }
+        #header .btn-sign-in:hover{
+            border:1px solid #F53855;
+            color :#F53855;
+        }
+        
+        #header .header-logo{
+            margin-top: 7px;
+        }
+        #header .header-content,
+        #header .header-content-coach{
+            margin-top: 9px;
+        }
+        #info img{
+            width:30px;
+            margin-right:20px;
+        }
+        #info{
+            display:flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #header .header-content a:hover,
+        #header .header-content-coach a:hover,
+        #header .header-logo a:hover{
+            color:#F53855
+        }
+        #header span{
+            padding-top:15px;
+        }
+        #header .margin-right{
+            margin-right:40px;
+            margin-top:3px;
+        }
+        #header .margin-right .bell-main{
+            font-size:20px;
+        }
+        #header .dropdown img{
+            width:35px;
+        }
+        #header .role{
+            margin-top:5px;
+            margin-left:20px;
+        }
+        #header .user i{
+            margin-right:20px;
+            color:#F53855;
+        }
+        #header .margin-right .dropdown-menu{
+            position: absolute;
+            inset: 0px auto auto 0px;
+            margin: 0px;
+            width: 250px!important;
+            transform: translate3d(-110px, 29.3333px, 0px)!important;
+        }
+        #header .margin-right .title{
+            font-weight:500;
+            color:#F53855;
+            font-size:20px;
+        }
+        #header .margin-right span{
+            margin-left:30px;
+            font-size:15px;
+        }
+        #header .margin-right i{
+            margin-left:10px;
+        }
+        #header .border-dropdown i {
+            border-radius: 40px;
+            border:1px solid #F53855;
+            color:#F53855;
+            padding:5px;
+        }
+        #header .dropdown-menu i{
+            width:20px;
+        }
+        #header .header-logo {
+            text-align: start!important;
+        }
+        #header .logo{
+            margin-top:10px;
+        }
+        input{
+            width:10%;
+        }
+        label{
+            width: 80px; /* Thiết lập độ rộng cố định cho nhãn */
+            display: inline-block; /* Để các nhãn hiển thị trên cùng một hàng */
+        }
+        .mbt-5{
+            margin-bottom: 7px;
+        }
+        .btn-submit{
+            margin-left:30px;
+            background-color: transparent;
+            color:#F53838;
+            border:1px solid #F53855;
+            padding:5px;
+            width:80px;
+        }
+        .btn-submit:hover{
+            background-color: #F53838;
+            color:white;
+            cursor:pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="info"><a href="home.html" className="header-logo-title"><img class="logo" src="http://localhost/BE/public/images/Image8.jpg" alt="" /></a><p>BodyVisualiser for FlexFit</p></div>
+
+    <!-- <div id="info"><a href="female.html">Switch to female body.</a></div> -->
+    <div class="mbt-5">
+        <label for="">Age:</label>
+        <input type="number" id="age" name="age" min="15" max="50">
+    </div>
+    <div class="mbt-5">
+        <label for="">Weight:</label>
+        <input type="number" id="weight" name="weight" min="20" max="150">
+    </div>
+    <button class="btn-submit" onclick="loadModel()">Submit</button>
+    <div id="alert"></div>
+    <div id="container"></div>
+    <form id="morphDataForm" style="display: none;">
+        <!-- Các trường input cho dữ liệu morphs sẽ được thêm vào đây -->
+    </form>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="js/three.js"></script>
+    <script src="js/UCSCharacter.js"></script>
+    <script src="js/data.gui.js"></script>
+    <script src="js/orbit.js"></script>
+    <script>
+        var SCREEN_WIDTH = window.innerWidth;
+        var SCREEN_HEIGHT = window.innerHeight;
+        var container;
+        var camera, scene;
+        var renderer;
+        var mesh;
+        var mouseX = 0, mouseY = 0;
+        var windowHalfX = window.innerWidth / 2;
+        var windowHalfY = window.innerHeight / 2;
+        var clock = new THREE.Clock();
+        var gui, skinConfig, morphConfig;
+
+        init();
+        animate();
+
+        function init() {
+            container = document.getElementById('container');
+            camera = new THREE.PerspectiveCamera(30, window.innerWidth / window.innerHeight, 1, 100000);
+            camera.position.set(-9.50, 3028.228, 3324.432);
+            scene = new THREE.Scene();
+
+            var light = new THREE.DirectionalLight(0xffffff, 1);
+            light.position.set(0, -1, 0);
+            light.position.set(13, 5, 0);
+            scene.add(light);
+
+            renderer = new THREE.WebGLRenderer({ antialias: true });
+            renderer.setSize(SCREEN_WIDTH, SCREEN_HEIGHT);
+            renderer.setClearColor(0xffffff);
+            container.appendChild(renderer.domElement);
+
+            character = new THREE.prototype();
+            character.onLoadComplete = function () {
+                console.log("Load Complete");
+                console.log(character.numSkins + " skins and " + character.numMorphs + " morphtargets loaded.");
+                gui = new dat.GUI();
+                setupMorphsGUI();
+                gui.width = 300;
+                gui.open();
+            };
+
+            var loader = new THREE.XHRLoader();
+            loader.load("models/skinned/testconfig.json", function (text) {
+                var config = JSON.parse(text);
+                character.loadParts(config);
+                scene.add(character.root);
+            });
+
+            window.addEventListener('resize', onWindowResize, false);
+
+            controls = new THREE.OrbitControls(camera, renderer.domElement);
+            controls.center.set(0, 3000, 0);
+            controls.addEventListener('change', render);
+        }
+
+
+        function setupMorphsGUI() {
+            var morphGui = gui.addFolder("Morphs");
+            morphConfig = {};
+            var morphCallback = function (index) {
+                return function () {
+                    character.updateMorphs(morphConfig);
+                    updateMorphDataForm();
+                };
+            };
+
+            for (var i = 0; i < character.numMorphs; i++) {
+                var morphName = character.morphs[i];
+                morphConfig[morphName] = character.morphslimit[i];
+            }
+
+            for (var i = 0; i < character.numMorphs; i++) {
+                morphGui.add(morphConfig, character.morphs[i])
+                    .min(character.morphslowlimit[i])
+                    .max(character.morphshighlimit[i])
+                    .onChange(morphCallback(i));
+            }
+
+            morphGui.open();
+        }
+
+        function updateMorphDataForm() {
+            var morphDataForm = document.getElementById("morphDataForm");
+            morphDataForm.innerHTML = ""; // Xóa dữ liệu cũ
+
+            // Dữ liệu mặc định cho các morph
+            var defaultMorphValues = [160, 96.67, 37, 12.36, 13.07, 1, 86, 1, 76.66, 26, 15, 16, 112, 36, 42, 38, 55];
+
+            // Lặp qua từng morph và thêm một trường input ẩn cho mỗi morph
+            for (var i = 0; i < character.numMorphs; i++) {
+                var morphName = character.morphs[i];
+                var morphValue = morphConfig[morphName] || defaultMorphValues[i]; // Sử dụng giá trị mặc định nếu không có giá trị trong morphConfig
+
+                var inputField = document.createElement("input");
+                inputField.type = "hidden";
+                inputField.name = morphName;
+                inputField.value = morphValue;
+
+                morphDataForm.appendChild(inputField);
+            }
+        }
+
+
+        function onWindowResize() {
+            windowHalfX = window.innerWidth / 2;
+            windowHalfY = window.innerHeight / 2;
+
+            camera.aspect = window.innerWidth / window.innerHeight;
+            camera.updateProjectionMatrix();
+
+            renderer.setSize(window.innerWidth, window.innerHeight);
+        }
+
+        function animate() {
+            requestAnimationFrame(animate);
+            controls.update();
+            render();
+        }
+
+        function render() {
+            renderer.render(scene, camera);
+        }
+
+        function submitMorphData() {
+            // Lấy ra form và formData từ DOM
+            var form = document.getElementById("morphDataForm");
+            var formData = new FormData(form);
+
+            // Kiểm tra xem formData có trống không
+            var isEmpty = true;
+            for (var pair of formData.entries()) {
+                if (pair[1] !== "") { // Nếu có một giá trị khác rỗng, đánh dấu là không trống
+                    isEmpty = false;
+                    break;
+                }
+            }
+
+            // Nếu formData trống, cập nhật giá trị mặc định vào formData
+            if (isEmpty) {
+                updateMorphDataForm();
+                formData = new FormData(form); // Cập nhật lại formData sau khi đã thêm giá trị mặc định
+            }
+            //Log formData ra console
+            for (var pair of formData.entries()) {
+                console.log(pair[0] + ': ' + pair[1]);
+            }
+
+
+        }
+        function showAlert(message) {
+            const alertDiv = document.getElementById('alert');
+            alertDiv.style.display = 'block';
+            alertDiv.innerHTML = `
+                <div class="alert-container">
+                    <div class="alert_border">
+                        <span>Alert</span>
+                        <div class="alert_title"><p>${message}</p></div>
+                        <button onclick="hideAlert()">Close</button>
+                    </div>
+                </div>
+            `;
+        }
+        function loadModel() {
+            try {
+                
+                // Lấy ra form và formData từ DOM
+                var ageInput = document.querySelector('input[name="age"]');
+                var age = ageInput.value;
+                var weightInput = document.querySelector('input[name="weight"]');
+                var weight = weightInput.value;
+                if (age < 10 || age > 75) {
+                    showAlert("Age must be between 1 and 75.");
+                    return false; // Ngăn chặn việc gửi dữ liệu nếu có lỗi
+                }
+                if (weight < 42 || weight > 164) {
+                    showAlert("Weight must be between 30 and 150.");
+                    return false; // Ngăn chặn việc gửi dữ liệu nếu có lỗi
+                }
+                if (age === "" || weight === "") {
+                    showAlert("Please enter both age and weight.");
+                    return false; // Ngăn chặn việc gửi dữ liệu nếu có lỗi
+                }
+                // Lấy ra form và formData từ DOM
+                var form = document.getElementById("morphDataForm");
+                var formData = new FormData(form);
+
+                // Kiểm tra xem formData có trống không
+                var isEmpty = true;
+                for (var pair of formData.entries()) {
+                    if (pair[1] !== "") { // Nếu có một giá trị khác rỗng, đánh dấu là không trống
+                        isEmpty = false;
+                        break;
+                    }
+                }
+
+                // Nếu formData trống, cập nhật giá trị mặc định vào formData
+                if (isEmpty) {
+                    updateMorphDataForm();
+                    formData = new FormData(form); // Cập nhật lại formData sau khi đã thêm giá trị mặc định
+                }
+                //Log formData ra console
+
+                var jsonData = {};
+
+                formData.forEach(function (value, key) {
+                    jsonData[key] = value;
+                });
+
+                var height = parseFloat(jsonData["Height"]);
+                var sex = "M"; // Giá trị mặc định nếu không có giới tính được cung cấp
+
+
+                var ankle = parseFloat(21.73);
+                var knee = parseFloat(36.57);
+                var neck = parseFloat(jsonData["Neck"]);
+                var chest = parseFloat(jsonData["Chest"]);
+                var abdomen = parseFloat(jsonData["Abdomen"]);
+                var hip = parseFloat(jsonData["Hip"]);
+                var thigh = parseFloat(jsonData["Thigh"]);
+                var biceps = parseFloat(jsonData["Biceps"]);
+                var forearm = parseFloat(jsonData["Forearm"]);
+                var wrist = parseFloat(jsonData["Wrist"]);
+
+
+                // var data = [height, sex, neck, chest, abdomen, hip, thigh, ankle, knee, biceps, forearm, parseFloat(age), parseFloat(weight)]
+                var data = {
+                    "Sex": sex,
+                    "Age": parseFloat(age),
+                    "Weight": parseFloat(weight),
+                    "Height": height,
+                    "Neck": neck,
+                    "Chest": chest,
+                    "Abdomen": abdomen,
+                    "Hip": hip,
+                    "Thigh": thigh,
+                    "Knee": knee,
+                    "Ankle": ankle,
+                    "Biceps": biceps,
+                    "Forearm": forearm,
+                    "Wrist": wrist
+                    // "Sex": sex,
+                    // "Age": parseFloat(age),
+                    // "Weight": parseFloat(weight),
+                    // "Height": 1.72,
+                    // "Neck": 36.2,
+                    // "Chest": 93.1,
+                    // "Abdomen": 85.2,
+                    // "Hip": 94.5,
+                    // "Thigh": 59,
+                    // "Knee": 37.3,
+                    // "Ankle": 21.9,
+                    // "Biceps": 32,
+                    // "Forearm": 27.4,
+                    // "Wrist": 17.1
+
+                }
+                // console.log(JSON.stringify(data))
+                // function validateAndConvert(data) {
+                //     const validatedData = data.map(value => {
+                //         const num = parseFloat(value);
+                //         return isNaN(num) ? 0 : num;
+                //     });
+                //     return validatedData;
+                // }
+                // var validatedData = validateAndConvert(data);
+                // console.log(validatedData);
+                console.log(JSON.stringify(data))
+                // Gửi yêu cầu POST đến API Python với dữ liệu JSON
+                fetch('http://127.0.0.1:5000/api/loadModel', {
+                    method: 'POST',
+                    mode: "cors",
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify(data)
+
+                })
+                    .then(response => {
+                        if (!response.ok) {
+                            throw new Error('Network response was not ok');
+                        }
+                        return response.json();
+                    })
+                    .then(data => {
+                        console.log(data);
+                        var body_fat = Math.round(data.Body_Fat * 100) / 100;
+                        var alertDiv = document.getElementById('alert');
+                        if (alertDiv.style.display !== 'block') {
+                            alertDiv.style.display = 'block';
+                        }
+                        // Thêm nội dung của alert vào innerHTML của alertDiv
+                        alertDiv.innerHTML = `
+                            <div class="container alert-container">
+                                <div class="row justify-content-center">
+                                    <div class="col-sm-5 alert_border mt-5">
+                                        <div class="row">
+                                            <div class="col-sm-5 center">
+                                                <img src="/FE/assets/image/image9.png" alt="8888">
+                                            </div>
+                                            <div class="col-sm-7 center">
+                                                <div class="alert_title">
+                                                    <p class="red font-weight">Your % Body Fat is <span>${body_fat}%</span></p>
+                                                </div>
+                                                <div class="alert_description center">
+                                                    <p class="red">Do you want to improve your body shape?</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-12 center mt-3">
+                                                <button class="btn btn-hire-coach hireCoachButton" onclick="handleHireCoach()">HIRE COACH</button>
+                                                <button class="btn" onclick="hideAlert()">NO</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        `;
+                        document.querySelector('.hireCoachButton').addEventListener('click', function () {
+                            handleHireCoach(data); // Truyền dữ liệu vào hàm handleHireCoach khi nút được nhấn
+                        });
+                    })
+                    .catch(error => {
+                        console.error('There was a problem with your fetch operation:', error);
+                    });
+            } catch (error) {
+                console.error('Error:', error);
+            }
+        }
+        function hideAlert() {
+            var alertDiv = document.getElementById('alert');
+            if (alertDiv.style.display === 'block') {
+                alertDiv.style.display = 'none';
+            }
+        }
+        function handleHireCoach(data_body) {
+            const urlParams = new URLSearchParams(window.location.search);
+            const token = urlParams.get('token');
+            const id = parseInt(urlParams.get('id'));
+            if (data_body !== undefined && data_body !== null) {
+            // Xử lý dữ liệu khi nó tồn tại
+                console.log(data_body);
+            }
+            const sex = data_body.Sex === 1 ? 'M' : 'F';
+            const data_bodyfat = {
+                'bodyfat': data_body.Body_Fat,
+                'id_user': id,
+                'sex': sex,
+                'age': data_body.Age,
+                'height': data_body.Height,
+                'weight': data_body.Weight,
+                'neck': data_body.Neck,
+                'chest': data_body.Chest,
+                'abdomen': data_body.Abdomen,
+                'hip': data_body.Hip,
+                'thigh': data_body.Thigh,
+                'knee': data_body.Knee,
+                'ankle': data_body.Ankle,
+                'biceps': data_body.Biceps,
+                'forearm': data_body.Forearm,
+                'wrist': data_body.Wrist,
+            };
+            
+            fetch('http://127.0.0.1:8000/api/saveBody', {
+                method: 'POST',
+                mode: "cors",
+                headers: {
+                    'Authorization': `Bearer ${token}`,
+                    'Content-Type': 'application/json'
+                },
+                // body: JSON.stringify(data)
+                body: JSON.stringify(data_bodyfat),
+            })
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('Network response was not ok');
+                    }
+                    return response.json();
+                })
+                .then(data => {
+                    console.log(data);
+                    window.location.href = 'http://localhost:3000/user/list_coaches';
+                })
+                .catch(error => {
+                    console.error('There was a problem with your fetch operation:', error);
+                });
+            // Send a message to the parent window
+            
+        }
+        // Event listener for receiving messages from parent window
+
+    </script>
+
+</body>

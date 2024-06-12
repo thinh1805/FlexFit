@@ -1,0 +1,155 @@
+#payment .logo img{
+    width:45px;
+    height:45px;
+}
+#payment .border-container{
+    border: 1px solid #0000001A;
+    height:558px;
+}
+#payment .logo p{
+    margin-top:16px;
+    margin-left:10px;
+    font-weight:700;
+    font-size:23px;
+}
+#payment .table_user {
+    font-size: 14px;
+}
+#payment .table input{
+    height:18px;
+    width:18px;
+    border-radius: 10%;
+}
+#payment .search-border{
+    border:1px solid #0000001A ;
+    padding: 10px;
+    width:450px;
+    margin-left:50px;
+}
+#payment .search-border i{
+    margin-left:10px;
+}
+#payment .search-border input{
+    border:none;
+    outline:0;
+    margin-left:20px;
+}
+#payment .img_personal img{
+    width:50px; 
+}
+
+#payment .padding{
+    padding-left:20px;
+    padding-right:40px;
+}
+#payment .padding {
+    font-size:11px;
+}
+#payment .table{
+    text-align: center;
+}
+#payment .table i{
+    color:red;
+}
+#payment .green i{
+    color:#4ECB71
+}
+#payment .btn-search{
+    font-size:10px;
+    margin-left:10px;
+    height:40px;
+    width:70px;
+    color:white;
+    background-color:#F53838
+}
+#payment button:hover{
+    background-color: transparent;
+    color:#F53838;
+    border:1px solid #F53838;
+}
+#payment .search{
+    margin-top:37px;
+}
+#payment .pagination {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#payment .pagination button {
+    font-size: 14px;
+    padding: 8px 12px;
+    margin-right: 8px;
+    border: 1px solid #000;
+    background-color: transparent;
+    color: #000;
+    cursor: pointer;
+}
+
+#payment .pagination button:hover {
+    background-color: #F53838;
+    color: #fff;
+}
+
+#payment .pagination .btn-next,
+#payment .pagination .btn-prev {
+    width:55px;
+}
+
+#payment .pagination .disabled {
+    border: 1px solid #ccc;
+    color: #ccc;
+    cursor: not-allowed;
+}
+
+#payment .pagination .btn-active {
+    background-color: #F53838;
+    color: #fff;
+    border: 1px solid #F53838;
+}
+
+#payment .pagination span {
+    margin-right: 20px;
+}
+
+#payment .btn-next {
+    margin-right: 0;
+}
+
+#payment .btn-prev:last-child {
+    margin-right: 20px;
+}
+
+#payment .btn-next {
+    margin-right: 0;
+}
+
+#payment .btn-prev:last-child {
+    margin-right: 20px;
+}
+
+#payment .pagination .btn-prev {
+    order: 2;
+}
+
+#payment .pagination .btn-next {
+    order: 3;
+}
+
+#payment .pagination button:not(.disabled) ~ button:last-child {
+    display: inline-block;
+}
+
+#payment .pagination .btn-prev,
+#payment .pagination .btn-active,
+#payment .pagination .btn-next {
+    display: inline-block; /* Hiển thị chỉ các nút prev, active và next */
+}
+
+#payment .pagination .btn-prev + button,
+#payment .pagination .btn-active + button {
+    display: inline-block; /* Hiển thị nút trang tiếp theo sau nút prev hoặc active */
+}
+#payment .table_user{
+    height:395px;
+}

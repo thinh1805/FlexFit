@@ -1,0 +1,20 @@
+#InformationMeal .border-information{
+    border:1px solid #F53855;
+    border-radius: 10px;
+}
+
+
+#InformationMeal .padding-information {
+    border:1px solid black;
+    padding:50px;
+}
+#InformationMeal .padding-information input{
+    padding-bottom: 63px;
+    width:251px;
+}
+#InformationMeal  .col-sm-12{
+    margin-bottom: 80px;
+}
+.checkstatus{
+    color:#7CFC00;
+}

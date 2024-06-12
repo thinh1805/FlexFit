@@ -1,0 +1,19 @@
+#content .content_img img{
+    width:508px;
+    height:414px 
+}
+#content i{
+    color:rgba(28, 128, 0, 0.701);
+    font-size:13px;
+}
+#content .content_title{
+    font-size:35px;
+    font-weight:600;
+}
+#content .padding{
+    padding-left:30px;
+    padding-top:50px;
+}
+#content p{
+    font-size:18px;
+}
